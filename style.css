@@ -12,16 +12,17 @@ section
 section article
 {
    display: flex;
-   flex-direction: column;
    flex-wrap: wrap;
    width:66%;
 }
 
+
 article div
 {
-    flex-direction: row;
-    flex-wrap: wrap;
+    width: 30%;
+    border:3px black outset;
     background-color: red;
+    flex-direction: row;
 }
 
 section aside
@@ -32,7 +33,7 @@ section aside
 
 #La_cannebiere img,#Hotel_du_port img,#Hotel_les_mouettes img,#Hotel_de_la_mer img,#Auberge_le_panier img,#Hotel_chez_amina img
 {
-    width: 20%;
+    width: 75%;
     height: 130px;
     flex-wrap: wrap;
 }
