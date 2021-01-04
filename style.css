@@ -1,3 +1,50 @@
+
+
+
+/*Body*/
+/*Hébergements*/
+section
+{
+    display: flex;
+    flex-direction: row;
+}
+
+section article
+{
+   display: flex;
+   flex-direction: column;
+   flex-wrap: wrap;
+   width:66%;
+}
+
+article div
+{
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: red;
+}
+
+section aside
+{
+    flex-direction: column;
+    width:33%;
+}
+
+#La_cannebiere img,#Hotel_du_port img,#Hotel_les_mouettes img,#Hotel_de_la_mer img,#Auberge_le_panier img,#Hotel_chez_amina img
+{
+    width: 20%;
+    height: 130px;
+    flex-wrap: wrap;
+}
+
+/*brouillon*/
+aside img
+{
+    width:20%;
+}
+
+/**/
+
 .etoile_pleine
 {
     color:blue;
@@ -7,3 +54,11 @@
 {
     color:grey;
 }
+
+/*Activités*/
+/*brouillon*/
+#Vieux_port img, #Miniature_colle_vieux_port img, #Parc_national_des_calanques img, #Miniature_colle_parc_calanques img
+{
+    width: 20%;
+}
+/**/
