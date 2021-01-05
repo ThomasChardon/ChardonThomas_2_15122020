@@ -23,7 +23,7 @@ section article
    padding-bottom: 20px;
 }
 
-#Article_hebergements
+#Article_hebergements, aside
 {
     border-radius: 5%;
     background-color:#F2F2F2;
@@ -48,16 +48,6 @@ article div
     box-shadow: 2px 2px 4px lightgray,-2px -2px 4px lightgray;
 }
 
-section aside
-{
-    flex-direction: column;
-    width:25%;
-    margin-left: 30px;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 20px;
-}
-
 #La_cannebiere img,#Hotel_du_port img,#Hotel_les_mouettes img,#Hotel_de_la_mer img,#Auberge_le_panier img,#Hotel_chez_amina img
 {
     width: 100%;
@@ -76,14 +66,6 @@ article h2, article a
     padding-left: 40px;
 }
 
-/*brouillon*/
-aside img
-{
-    width:20%;
-}
-
-/**/
-
 .etoile_pleine
 {
     color:blue;
@@ -93,6 +75,53 @@ aside img
 {
     color:grey;
 }
+
+/*Aside*/
+section aside
+{
+    flex-direction: column;
+    width:29%;
+    margin-left: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+
+aside div
+{
+    border:5px white solid;
+    border-radius: 10%;
+    display:flex;
+    box-shadow: 2px 2px 4px lightgray,-2px -2px 4px lightgray;
+}
+
+aside img
+{
+    width:20%;
+}
+
+#Hotel_le_soleil_du_matin img, #Au_coeur_de_leau_chambre_dhotes img, #Hotel_tout_bleu_et_blanc img
+{
+    width: 35%;
+    height: 130px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+#Hotel_le_soleil_du_matin, #Au_coeur_de_leau_chambre_dhotes, #Hotel_tout_bleu_et_blanc
+{
+    flex-direction:row;
+}
+
+aside h3, aside p
+{
+    flex-direction: column;
+    background-color:red;
+}
+
+/*brouillon*/
+
+/**/
 
 /*Activités*/
 /*brouillon*/
