@@ -61,7 +61,7 @@ div h3, div p
     padding-left: 20px;
 }
 
-article h2, article a
+article h2, #Afficher_plus
 {
     padding-left: 40px;
 }
@@ -102,7 +102,7 @@ aside img
 
 #Hotel_le_soleil_du_matin img, #Au_coeur_de_leau_chambre_dhotes img, #Hotel_tout_bleu_et_blanc img
 {
-    width: 35%;
+    width: 150px;
     height: 130px;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
