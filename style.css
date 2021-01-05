@@ -34,7 +34,7 @@ section article
     flex-direction: row;
     justify-content: space-around;
     width: 100%;
-    height: 650px;
+    height: 500px;
     align-content: space-around;
 }
 
@@ -45,7 +45,9 @@ article div
     border-radius: 10%;
     flex-direction: row;
     justify-content: space-around;
+    line-height: 5px;
     box-shadow: 2px 2px 4px lightgray,-2px -2px 4px lightgray;
+    background-color: white;
 }
 
 #La_cannebiere img,#Hotel_du_port img,#Hotel_les_mouettes img,#Hotel_de_la_mer img,#Auberge_le_panier img,#Hotel_chez_amina img
@@ -61,9 +63,16 @@ div h3, div p
     padding-left: 20px;
 }
 
-article h2, #Afficher_plus
+article h2
 {
     padding-left: 40px;
+    padding-top: 20px;
+}
+
+#Afficher_plus
+{
+    padding-left: 40px;
+    padding-bottom: 20px;
 }
 
 .etoile_pleine
