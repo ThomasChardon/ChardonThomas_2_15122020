@@ -87,8 +87,9 @@ article h2
 /*Aside*/
 section aside
 {
-    flex-direction: column;
+    
     width:29%;
+    height: 650px;
     margin-left: 30px;
     padding-left: 20px;
     padding-right: 20px;
@@ -98,7 +99,9 @@ section aside
 aside div
 {
     border:5px white solid;
-    justify-content: space-between;
+    align-content:flex-end;/*Ne fonctionne pas, ni justify ni autre.....*/
+    height: 130px;
+    background-color: green;
     border-radius: 10%;
     line-height: 17px;
     box-shadow: 2px 2px 4px lightgray,-2px -2px 4px lightgray;
@@ -121,7 +124,6 @@ aside img
 #Hotel_le_soleil_du_matin, #Au_coeur_de_leau_chambre_dhotes, #Hotel_tout_bleu_et_blanc
 {
     /*flex-direction:column;*/
-    background-color: green;
 }
 
 aside div a
