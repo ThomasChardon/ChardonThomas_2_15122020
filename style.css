@@ -6,6 +6,32 @@ body
 }
 
 /*Body*/
+/*Header*/
+header
+{
+    /*display:flex;*/
+}
+
+header h1
+{
+    color:#0065FC;
+}
+
+header nav
+{
+    display: flex;
+    justify-content:flex-end;
+    background-color: teal;
+    width : 35%;
+}
+
+header nav li
+{
+
+}
+
+
+
 /*Hébergements*/
 section
 {
@@ -21,6 +47,7 @@ section article
    padding-left: 20px;
    padding-right: 50px;
    padding-bottom: 20px;
+   margin-right: 30px;
 }
 
 #Article_hebergements, aside
@@ -106,7 +133,7 @@ aside div
     align-content:flex-end;/*Ne fonctionne pas, ni justify ni autre.....*/
     height: 130px;
     background-color: white;
-    border-radius: 10%;
+    border-radius: 8%/20%;
     line-height: 17px;
     box-shadow: 2px 2px 4px lightgray,-2px -2px 4px lightgray;
 }
@@ -121,8 +148,8 @@ aside img
 {
     width: 150px;
     height: 130px;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
+    border-top-left-radius: 23px;
+    border-bottom-left-radius: 23px;
 }
 
 #Hotel_le_soleil_du_matin, #Au_coeur_de_leau_chambre_dhotes, #Hotel_tout_bleu_et_blanc
@@ -137,8 +164,8 @@ aside div a
 
 aside h3, aside p
 {
-    background-color:red;
     max-width: 70%;
+    padding-left: 170px;
 }
 
 /*brouillon*/
