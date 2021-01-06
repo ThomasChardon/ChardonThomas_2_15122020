@@ -9,7 +9,6 @@ body
 section
 {
     display: flex;
-    flex-direction: row;
 }
 
 section article
@@ -99,14 +98,16 @@ section aside
 aside div
 {
     border:5px white solid;
+    justify-content: space-between;
     border-radius: 10%;
-    display:flex;
+    line-height: 17px;
     box-shadow: 2px 2px 4px lightgray,-2px -2px 4px lightgray;
 }
 
 aside img
 {
     width:20%;
+    float:left;
 }
 
 #Hotel_le_soleil_du_matin img, #Au_coeur_de_leau_chambre_dhotes img, #Hotel_tout_bleu_et_blanc img
@@ -119,13 +120,19 @@ aside img
 
 #Hotel_le_soleil_du_matin, #Au_coeur_de_leau_chambre_dhotes, #Hotel_tout_bleu_et_blanc
 {
-    flex-direction:row;
+    /*flex-direction:column;*/
+    background-color: green;
+}
+
+aside div a
+{
+    max-width: 30%;
 }
 
 aside h3, aside p
 {
-    flex-direction: column;
     background-color:red;
+    max-width: 70%;
 }
 
 /*brouillon*/
