@@ -9,25 +9,46 @@ body
 /*Header*/
 header
 {
-    /*display:flex;*/
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
 }
 
-header h1
+#Titre
+{
+    display: flex;
+    flex-direction: column;
+}
+
+header h1, nav li
 {
     color:#0065FC;
 }
 
 header nav
 {
-    display: flex;
-    justify-content:flex-end;
-    background-color: teal;
     width : 35%;
+    margin-right: 20px;
 }
 
-header nav li
+nav ul
 {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    
+}
 
+nav li
+{
+    margin-right: 15px;
+    
+}
+
+nav a
+{
+    text-decoration: none;
+    color: #0065FC;
 }
 
 
