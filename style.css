@@ -1,11 +1,21 @@
+/*Fonts*/
 
+@font-face
+{
+    font-family: 'Raleway';
+    src: url("fonts/Raleway-VariableFont_wght.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/*Body*/
 body
 {
     margin-left: 30px;
     margin-right:30px;
+    font-family: 'Raleway';
 }
-
-/*Body*/
 /*Header*/
 header
 {
