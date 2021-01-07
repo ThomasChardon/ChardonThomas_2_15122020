@@ -213,6 +213,7 @@ aside h3, aside p
 {
     display:flex;
     justify-content: space-between;
+    margin-bottom: 30px;
 }
 
 .Grand_div
@@ -228,24 +229,39 @@ aside h3, aside p
     flex-direction: column;
 }
 
-#Vieux_port h4, #Parc_national_des_calanques h4
+#Miniature_colle_vieux_port, #Miniature_colle_parc_calanques
 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 
-    margin-left: 0;
-    padding-left: 0;
+#Vieux_port h4, #Parc_national_des_calanques h4, #Fort_de_pomegues h4, #Iles_du_frioul h4, #Notre_dame_de_la_garde h4, #Parc_longchamps h4
+{
+    margin-left: 20px;
 }
 
 /*Taille photos*/
 #Vieux_port img, #Parc_national_des_calanques img
 {
-    height:350px;
+    height:400px;
     width: 300px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
 }
 
 #Miniature_colle_vieux_port img, #Miniature_colle_parc_calanques img
 {
     height: 150px;
     width: 300px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+#Vieux_port, #Parc_national_des_calanques, #Fort_de_pomegues, #Iles_du_frioul, #Notre_dame_de_la_garde, #Parc_longchamps
+{
+    box-shadow: 2px 2px 4px lightgray,-2px -2px 4px lightgray;
+    border-radius: 20px;
 }
 
 /*footer*/
