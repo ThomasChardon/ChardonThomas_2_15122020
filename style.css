@@ -71,6 +71,7 @@ nav a
 
 #info
 {
+    padding-bottom: 20px;
     font-weight: normal;/*Ne fonctionne pas ?*/
 }
 
@@ -194,11 +195,6 @@ aside img
     border-bottom-left-radius: 23px;
 }
 
-#Hotel_le_soleil_du_matin, #Au_coeur_de_leau_chambre_dhotes, #Hotel_tout_bleu_et_blanc
-{
-    /*flex-direction:column;*/
-}
-
 aside div a
 {
     max-width: 30%;
@@ -210,9 +206,6 @@ aside h3, aside p
     padding-left: 170px;
 }
 
-/*brouillon*/
-
-/**/
 
 /*Activités*/
 /*brouillon*/
@@ -221,3 +214,18 @@ aside h3, aside p
     width: 20%;
 }
 /**/
+
+/*footer*/
+
+footer
+{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1000px;
+}
+
+footer ul
+{
+    list-style-type: none;
+    padding-left:20px;
+}
