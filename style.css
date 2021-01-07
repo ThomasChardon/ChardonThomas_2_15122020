@@ -4,7 +4,7 @@
 {
     font-family: 'Raleway';
     src: url("fonts/Raleway-VariableFont_wght.ttf") format("truetype");
-    font-weight: normal;
+    font-weight:bold;
     font-style: normal;
 }
 
@@ -30,7 +30,7 @@ header
     flex-direction: column;
 }
 
-header h1, nav li
+nav li
 {
     color:#0065FC;
 }
@@ -61,6 +61,18 @@ nav a
     color: #0065FC;
 }
 
+#Filtres_sous_header ul
+{
+    width:600px;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+#info
+{
+    font-weight: normal;/*Ne fonctionne pas ?*/
+}
 
 
 /*Hébergements*/
@@ -161,7 +173,6 @@ section aside
 aside div
 {
     border:5px white solid;
-    align-content:flex-end;/*Ne fonctionne pas, ni justify ni autre.....*/
     height: 130px;
     background-color: white;
     border-radius: 8%/20%;
