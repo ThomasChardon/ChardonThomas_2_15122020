@@ -27,7 +27,13 @@
         </div>
     </header>
     <div id="Filtres_sous_header">
-        <i class="fas fa-map-marker-alt"></i><a href="A_changer">Recherche</a>
+        <div id="div_recherche">
+            <form class="classe_recherche" action="action_page.php">
+                <i class="fas fa-map-marker-alt" id="icone_search"></i>
+                <input type="text" value="Marseille, France" name="search">
+                <button type="submit">Rechercher</button>
+            </form>
+        </div>
         <!-- filtres -->
         <ul>
             <li>Filtres</li>
