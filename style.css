@@ -17,22 +17,36 @@ body section, body header, #Filtres_sous_header, #Div_titre_activite
     font-family: 'Raleway';
 }
 /*Header*/
-header
+
+#nav_hebergements, #nav_activites
 {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
+    color:black;
 }
 
 #Titre
 {
     display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-top: 50px;
+}
+
+#sous_titre
+{
+    display:flex;
     flex-direction: column;
 }
 
 nav li
 {
     color:#0065FC;
+}
+
+#nav_hebergements:hover, #nav_activites:hover
+{
+    color:#0065FC;
+    border-top: 3px #0065FC solid;
+    padding-top: 30px;
 }
 
 header nav
@@ -145,6 +159,8 @@ article h2
 {
     padding-left: 40px;
     padding-bottom: 20px;
+    text-decoration: none;
+    color: black;
 }
 
 .etoile_pleine
@@ -207,6 +223,11 @@ aside h3, aside p
     padding-left: 170px;
 }
 
+#les_plus_populaires
+{
+    display: flex;
+    justify-content:flex-end;
+}
 
 /*Activités*/
 
@@ -292,10 +313,7 @@ N'oublie pas que ces liens de menu sont des ancres qui ammènent vers les diffé
 font awesome pour les différents icones de la maquette : https://fontawesome.com/icons?d=gallery / 
 tu peux importer font awesome en téléchargeant le fichier css associé ou en passant par un cdn (https://cdnjs.com/)
 
-corriger le bug d'import de la police Raleway
-reorganisation header premiere section
 etoile a changer : remplacer par font awesome
-modifier le style du lien afficher plus
 utiliser object fit : https://developer.mozilla.org/fr/docs/Web/CSS/object-fit sur les images pour qu'elle ne s'étire pas
 définir une class "max-width-container" avec les propriétés suivantes :
 max-width: 1300px;
@@ -308,3 +326,11 @@ corriger les erreurs de placements relatives à ces deux propriétés
 caniuse : quand tu ne connais pas une propriété et que tu veux vérifier la compatabilité navigateur
 chrome devtools : chercher des tutoriels
 utilisation ttf avec format truetype */
+
+
+
+/* done
+reorganisation header premiere section
+modifier le style du lien afficher plus
+corriger le bug d'import de la police Raleway 
+*/
