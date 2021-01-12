@@ -99,13 +99,44 @@ nav a
     border: 3px solid lightgray;
     height: 20px;
     padding: 10px;
-    border-radius: 25px;;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    padding-left: 0;
+    border-left: none;
+    gap:10px;
+    justify-content: space-between;
+    margin-right: 20px;
+}
+
+#icone_eco, #icone_fam, #icone_rom, #icone_aut
+{
+    padding: 15px;
+    height: 15px;
+    width: 15px;
+    background-color: #DEEBFF;
+    color: #0065FC;
+    border-radius: 40px;
 }
 
 #info
 {
     padding-bottom: 20px;
+    margin-top: 20px;
     font-weight: normal;/*Ne fonctionne pas ?*/
+}
+
+#id_i_info
+{
+    color:#0065FC;
+    size: 1px;
+    border: 1px solid lightgray;
+    height: 20px;
+    width: 15px;
+    padding-left: 7px;
+    padding-top: 2px;
+    border-radius: 20px;
+    align-content: center;
 }
 
 #div_recherche
