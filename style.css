@@ -89,6 +89,19 @@ nav a
     justify-content: space-between;
 }
 
+#filtres
+{
+    display:flex;
+}
+
+.icones_filtres
+{
+    border: 3px solid lightgray;
+    height: 20px;
+    padding: 10px;
+    border-radius: 25px;;
+}
+
 #info
 {
     padding-bottom: 20px;
@@ -145,6 +158,8 @@ form.classe_recherche input[type=text] {
   }
 
 /**/
+
+
 
 /*Hébergements*/
 section
