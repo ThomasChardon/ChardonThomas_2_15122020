@@ -260,6 +260,7 @@ article div
     flex-wrap: wrap;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+    object-fit: cover;
 }
 div h3, div p
 {
@@ -328,6 +329,7 @@ aside img
     height: 130px;
     border-top-left-radius: 23px;
     border-bottom-left-radius: 23px;
+    object-fit: cover;
 }
 
 aside div a
@@ -411,6 +413,10 @@ aside h3, aside p
     border-radius: 20px;
 }
 
+#Vieux_port img, #Parc_national_des_calanques img, #Fort_de_pomegues img, #Iles_du_frioul img, #Notre_dame_de_la_garde img, #Parc_longchamps img
+{
+    object-fit: cover;
+}
 /*footer*/
 
 footer
