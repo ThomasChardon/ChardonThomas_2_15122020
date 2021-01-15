@@ -474,27 +474,45 @@ footer ul
     section article
     {
         display: flex;
-        flex-wrap: wrap;
+        height : auto;
         width:100%;
         flex-direction: column;
         margin:10px;
         padding:10px;
         padding-right: 40px;
+        gap:8%;
     }
+
+    #Article_photos_hebergements
+    {
+        flex-direction: row;
+        flex-wrap: wrap;
+        height: auto;
+    }
+    
+    article div
+    {
+        flex-wrap: wrap;
+        width: 350px;
+        margin-top: 50px;
+        padding-bottom: 50px;
+    }
+
     #Article_photos_hebergements img
     {
-        min-width: 200px;
+    
     }
 
     /*aside*/
     aside
     {
-        height: auto;
+        
     }
 
     section aside
     {
         display: flex;
+        height: auto;
         width:100%;
         flex-direction: row;
         flex-wrap: wrap;
@@ -507,6 +525,8 @@ footer ul
     aside div, aside h2
     {
         width:350px;
+        align-content: space-between;
+        margin-bottom: 50px;
     }
 
     aside h2
