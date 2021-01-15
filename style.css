@@ -441,24 +441,21 @@ footer ul
 }
 
 
-/* Sur les écrans, quand la largeur de la fenêtre fait au maximum 375px */
-@media screen and (max-width: 374px)
+
+
+@media all and (min-width: 1300px)
 {
-    *
+    body
     {
-        width:auto;
-    }
-    /*activités*/
-    #section_activite
-    {
-        display: flex;
-        flex-direction: column;
+        margin-left:auto;
+        margin-right:auto;
     }
 
-    #Grand_div
+    section
     {
-        display: flex;
-        flex-direction: column;
+        margin: 0 auto;
+        width:90%;
+        background-color: blue; /*ne fonctionne pas*/
     }
 }
 
@@ -493,21 +490,12 @@ footer ul
     article div
     {
         flex-wrap: wrap;
-        width: 350px;
+        width: 300px;
         margin-top: 50px;
         padding-bottom: 50px;
     }
 
-    #Article_photos_hebergements img
-    {
-    
-    }
-
     /*aside*/
-    aside
-    {
-        
-    }
 
     section aside
     {
