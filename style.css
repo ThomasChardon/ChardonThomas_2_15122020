@@ -8,15 +8,6 @@
 }
 
 
-/*Body*/
-/* body section, body header, body footer, #Filtres_sous_header, #Div_titre_activite
-{
-    margin-left: 30px;
-    margin-right: 30px;
-    font-family: 'Raleway';
-    max-width: 1300px;
-} */
-
 .max_width_container
 {
     margin-left: auto;
@@ -60,7 +51,6 @@ nav li
 header nav
 {
     width : 35%;
-    margin-right: 20px;
 }
 
 nav ul
@@ -314,7 +304,6 @@ aside h2
 section aside
 {
     display: flex;
-    width:29%;
     height: 700px;
     padding-left: 50px;
     padding-right: 50px;
@@ -335,12 +324,6 @@ aside div
     box-shadow: 2px 2px 4px lightgray,-2px -2px 4px lightgray;
 }
 
-aside img
-{
-    width:20%;
-    float:left;
-}
-
 #Hotel_le_soleil_du_matin img, #Au_coeur_de_leau_chambre_dhotes img, #Hotel_tout_bleu_et_blanc img
 {
     width: 150px;
@@ -348,17 +331,7 @@ aside img
     border-top-left-radius: 23px;
     border-bottom-left-radius: 23px;
     object-fit: cover;
-}
-
-aside div a
-{
-    max-width: 30%;
-}
-
-aside h3, aside p
-{
-    max-width: 70%;
-    padding-left: 170px;
+    float:left;
 }
 
 #les_plus_populaires
@@ -372,47 +345,45 @@ aside h3, aside p
 #Div_titre_activite
 {
     padding-top: 10px;
-    padding-left: 10px;
 }
 
 #section_activite
 {
     display:flex;
-    justify-content: space-between;
-    padding-left: 10px;
+    width: 100%;
+
 }
 
 .Grand_div
 {
     display: flex;
-    width: 680px;
+    width: 100%;
     justify-content: space-between;
-
 }
 
-#Vieux_port, #Parc_national_des_calanques
-{
-    display: flex;
-    flex-direction: column;
-}
-
-#Miniature_colle_vieux_port, #Miniature_colle_parc_calanques
+#Vieux_port, #Parc_national_des_calanques, #Miniature_colle_vieux_port, #Miniature_colle_parc_calanques
 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    width: 280px;
 }
 
-#Vieux_port h4, #Parc_national_des_calanques h4, #Fort_de_pomegues h4, #Iles_du_frioul h4, #Notre_dame_de_la_garde h4, #Parc_longchamps h4
+#Miniature_colle_vieux_port
 {
-    margin-left: 20px;
+    margin-right: 30px;
+}
+
+#Parc_national_des_calanques
+{
+    margin-left: 30px;
 }
 
 /*Taille photos*/
 #Vieux_port img, #Parc_national_des_calanques img
 {
     height:400px;
-    width: 300px;
+    width:100%;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
@@ -420,7 +391,7 @@ aside h3, aside p
 #Miniature_colle_vieux_port img, #Miniature_colle_parc_calanques img
 {
     height: 150px;
-    width: 300px;
+    width: 100%;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
@@ -476,6 +447,12 @@ footer ul
 /* Sur tous types d'écran, quand la largeur de la fenêtre est comprise entre 375px et 768px */
 @media screen and (min-width: 375px) and (max-width: 1300px)
 {
+    /*filtres*/
+    #filtres ul
+    {
+        flex-wrap: wrap;
+    }
+
     /*hebergement*/
     section
     {
@@ -548,6 +525,15 @@ footer ul
         display: flex;
         flex-direction: column;
     }
+    #Miniature_colle_vieux_port
+{
+    margin-right: 0;
+}
+
+#Parc_national_des_calanques
+{
+    margin-left: 0;
+}
 }
 
 
@@ -562,9 +548,7 @@ regler les paddings et margin enlever ceux qui sont internes et essayer de les m
 colorPicker eyedropper : extension chrome qui te permet d'avoir la couleur précise d'un élément
 
 charte couleur
-footer : placement en flex start + regler avec un gap
 les propriétés css doivent être défini le plus haut possible avec un concept d'héritage
-border radius pas en pourcentage mais en px
 media queries que tu peux utiliser pour tous les projets d'intégrations :
 Large : 1210px
 Medium : 1024px
@@ -578,6 +562,8 @@ info sous filtre : font weight a regler
 regler la font family sur footer
 Filtres : animaux autorisé sur une ligne
 regler la position de l'icone avec le h2
+footer : placement en flex start + regler avec un gap
+border radius pas en pourcentage mais en px
 
 
 
