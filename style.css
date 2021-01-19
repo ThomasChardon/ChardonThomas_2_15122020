@@ -50,7 +50,9 @@ nav li
 
 header nav
 {
-    width : 35%;
+    /* width : 35%; */
+    display: flex;
+    justify-content: flex-end;
 }
 
 nav ul
@@ -463,7 +465,7 @@ footer ul
     {
         display: flex;
         height : auto;
-        width:100%;
+        width:auto;
         flex-direction: column;
         margin:10px;
         padding:10px;
@@ -483,6 +485,7 @@ footer ul
         flex-wrap: wrap;
         width: 300px;
         margin-top: 50px;
+        margin-right: 0;
         padding-bottom: 50px;
     }
 
@@ -492,7 +495,7 @@ footer ul
     {
         display: flex;
         height: auto;
-        width:100%;
+        width:auto;
         flex-direction: row;
         flex-wrap: wrap;
         margin:10px;
@@ -526,14 +529,14 @@ footer ul
         flex-direction: column;
     }
     #Miniature_colle_vieux_port
-{
-    margin-right: 0;
-}
-
-#Parc_national_des_calanques
-{
-    margin-left: 0;
-}
+    {
+        margin-right: 0;
+    }
+    
+    #Parc_national_des_calanques
+    {
+        margin-left: 0;
+    }
 }
 
 
