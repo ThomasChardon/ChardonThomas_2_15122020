@@ -4,19 +4,17 @@
 {
     font-family: 'Raleway';
     src: url("fonts/Raleway-VariableFont_wght.ttf") format("truetype");
-    font-weight:bold;
     font-style: normal;
 }
 
 
 /*Body*/
-body section, body header, #Filtres_sous_header, #Div_titre_activite
+body section, body header, body footer, #Filtres_sous_header, #Div_titre_activite
 {
     margin-left: 30px;
     margin-right: 30px;
     font-family: 'Raleway';
-    max-width: 1600px;
-
+    max-width: 1300px;
 }
 /*Header*/
 
@@ -85,7 +83,7 @@ nav a
 
 #Filtres_sous_header ul
 {
-    width:600px;
+    width:800px;
     list-style-type: none;
     display: flex;
     justify-content: space-between;
@@ -94,6 +92,7 @@ nav a
 #filtres
 {
     display:flex;
+    font-weight:bolder;
 }
 
 .icones_filtres
@@ -230,7 +229,7 @@ section article
 
 #Article_hebergements, aside
 {
-    border-radius: 5%;
+    border-radius: 20px;
     background-color:#F2F2F2;
 }
 
@@ -250,7 +249,7 @@ article div
     border-radius: 10%;
     flex-direction: row;
     justify-content: space-around;
-    line-height: 5px;
+
     box-shadow: 2px 2px 4px lightgray,-2px -2px 4px lightgray;
     background-color: white;
 }
@@ -286,7 +285,7 @@ article h2
 
 .etoile_pleine
 {
-    color:blue;
+    color:#0065FC;
 }
 
 .etoile_vide
@@ -295,6 +294,12 @@ article h2
 }
 
 /*Aside*/
+aside h2
+{
+    display: flex;
+    justify-content: space-between;
+}
+
 section aside
 {
     display: flex;
@@ -443,24 +448,17 @@ footer ul
 
 
 
-@media all and (min-width: 1300px)
+@media screen and (min-width: 1300px)
 {
     body
     {
         margin-left:auto;
         margin-right:auto;
     }
-
-    section
-    {
-        margin: 0 auto;
-        width:90%;
-        background-color: blue; /*ne fonctionne pas*/
-    }
 }
 
 /* Sur tous types d'écran, quand la largeur de la fenêtre est comprise entre 375px et 768px */
-@media all and (min-width: 375px) and (max-width: 1300px)
+@media screen and (min-width: 375px) and (max-width: 1300px)
 {
     /*hebergement*/
     section
@@ -539,6 +537,39 @@ footer ul
 
 
 /* 
+
+
+Revue de code :
+
+Max width / margin auto : corriger sur chaque élément ou tu mets une max width (centrer ton bloc)
+regler les paddings et margin enlever ceux qui sont internes et essayer de les mettre au plus haut niveau
+colorPicker eyedropper : extension chrome qui te permet d'avoir la couleur précise d'un élément
+regler la position de l'icone avec le h2
+charte couleur
+footer : placement en flex start + regler avec un gap
+les propriétés css doivent être défini le plus haut possible avec un concept d'héritage
+border radius pas en pourcentage mais en px
+media queries que tu peux utiliser pour tous les projets d'intégrations :
+Large : 1210px
+Medium : 1024px
+Tablet : 768px
+Small : 410px
+Mini : 375px
+
+done
+controller la font weight
+info sous filtre : font weight a regler
+regler la font family sur footer
+Filtres : animaux autorisé sur une ligne
+
+
+
+
+
+
+
+
+
 lien de menu : utilisation hover (changement couleur lien) et pseudo element : before et after pour la barre au dessus des éléments. 
 N'oublie pas que ces liens de menu sont des ancres qui ammènent vers les différentes section de ta page
 
@@ -548,9 +579,9 @@ changer flex space between en center (a toi de voir ici : normalement tu peux la
 revoir justify content et align items : deux propriétés très importantes sur flex
 corriger les erreurs de placements relatives à ces deux propriétés
 
-caniuse : quand tu ne connais pas une propriété et que tu veux vérifier la compatabilité navigateur
+
 chrome devtools : chercher des tutoriels
-utilisation ttf avec format truetype 
+
 */
 
 
