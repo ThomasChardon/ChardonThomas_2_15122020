@@ -16,29 +16,34 @@
     max-width: 1300px;
 }
 /*Header*/
-
-#nav_hebergements, #nav_activites
-{
-    color:black;
-}
-
 #Titre
 {
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
-    padding-top: 50px;
+    padding-top: 40px;
 }
 
-#sous_titre
+#nav_et_inscription
 {
-    display:flex;
-    flex-direction: column;
+    display: flex;
+    align-items: center;
 }
 
-nav li
+#nav ul
 {
-    color:#0065FC;
+    list-style-type: none;
+    display: flex;
+}
+
+#nav li
+{
+    margin-right: 15px;
+}
+
+#nav a
+{
+    text-decoration: none;
+    color: black;
 }
 
 #nav_hebergements:hover, #nav_activites:hover
@@ -48,33 +53,20 @@ nav li
     padding-top: 30px;
 }
 
-header nav
-{
-    /* width : 35%; */
-    display: flex;
-    justify-content: flex-end;
-}
-
-nav ul
-{
-    list-style-type: none;
-    display: flex;
-    justify-content: space-between;
-    
-}
-
-nav li
-{
-    margin-right: 15px;
-    
-}
-
-nav a
+#s_inscrire a
 {
     text-decoration: none;
     color: #0065FC;
 }
 
+
+
+
+
+
+
+
+/*Champs recherche et filtres*/
 #Filtres_sous_header
 {
     display:flex;
@@ -602,6 +594,13 @@ footer h3
     {
         display: initial;
     }
+
+
+    #nav_et_inscription
+    {
+        flex-wrap: wrap-reverse;
+    }
+
 }
 
 
