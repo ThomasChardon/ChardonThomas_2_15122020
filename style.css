@@ -161,6 +161,12 @@ nav a
     padding-top: 20px;
 }
 
+#recherche_loupe
+    {
+        width: 50px;
+        display: none;
+    }
+
 /* Style the search field */
 #icone_search
 {
@@ -447,6 +453,10 @@ footer h3
 }
 
 
+
+
+
+
 /*Media queries*/
 
 @media screen and (min-width: 1300px)
@@ -459,7 +469,7 @@ footer h3
 }
 
 /* Sur tous types d'écran, quand la largeur de la fenêtre est comprise entre 375px et 768px */
-@media screen and (min-width: 375px) and (max-width: 1300px)
+@media screen and (min-width: 374px) and (max-width: 1300px)
 {
     /*gestion des marges en dessous de 1300px*/
     .max_width_container
@@ -540,28 +550,28 @@ footer h3
     }
     
     /*activités*/
+
     #section_activite
     {
-        display: flex;
         width: auto;
-        flex-direction: column;
         margin-left: 20px;
         flex-wrap: wrap;
         height: auto;
     }
 
-    #Grand_div
+    .Grand_div
     {
-        display: flex;
-        width: 100%;
-        flex-direction: column;
+        width: auto;
+        height: auto;
         flex-wrap: wrap;
+        margin-bottom: 20px;
+        justify-content: space-around;
     }
 
     #Vieux_port, #Parc_national_des_calanques, #Miniature_colle_vieux_port, #Miniature_colle_parc_calanques
     {
         flex-wrap: wrap;
-        width: 280px;
+        min-width: 280px;
     }
     
     #Miniature_colle_vieux_port
@@ -573,8 +583,26 @@ footer h3
     {
         margin-left: 0;
     }
+
 }
 
+@media screen and (min-width: 374px) and (max-width: 610px)
+{
+    #Vieux_port, #Fort_de_pomegues, #Parc_national_des_calanques, #Notre_dame_de_la_garde
+    {
+        margin-bottom: 20px;
+    }
+
+    #recherche_bleue
+    {
+        display: none;
+    }
+
+    #recherche_loupe
+    {
+        display: initial;
+    }
+}
 
 
 /* 
@@ -584,14 +612,6 @@ Revue de code :
 
 colorPicker eyedropper : extension chrome qui te permet d'avoir la couleur précise d'un élément
 
-charte couleur
-les propriétés css doivent être défini le plus haut possible avec un concept d'héritage
-media queries que tu peux utiliser pour tous les projets d'intégrations :
-Large : 1210px
-Medium : 1024px
-Tablet : 768px
-Small : 410px
-Mini : 375px
 
 done
 Max width / margin auto : corriger sur chaque élément ou tu mets une max width (centrer ton bloc)
