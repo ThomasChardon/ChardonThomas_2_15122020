@@ -219,7 +219,6 @@ section article
 {
    display: flex;
    flex-wrap: wrap;
-   width:60%;
    flex-direction: column;
    padding-left: 20px;
    padding-right: 50px;
@@ -311,6 +310,7 @@ section aside
     padding-right: 50px;
     padding-bottom: 20px;
     padding-top: 20px;
+    font-size: 0.8em;
     flex-direction: column;
     justify-content: space-around;
     align-content: space-around;
@@ -321,9 +321,15 @@ aside div
     border:5px white solid;
     height: 130px;
     background-color: white;
+    min-width: 300px;
     border-radius: 8%/20%;
     line-height: 17px;
     box-shadow: 2px 2px 4px lightgray,-2px -2px 4px lightgray;
+}
+
+aside div h3, aside div p
+{
+    padding-left: 160px;
 }
 
 #Hotel_le_soleil_du_matin img, #Au_coeur_de_leau_chambre_dhotes img, #Hotel_tout_bleu_et_blanc img
@@ -353,7 +359,6 @@ aside div
 {
     display:flex;
     width: 100%;
-
 }
 
 .Grand_div
@@ -432,6 +437,13 @@ footer
 footer ul
 {
     list-style-type: none;
+    margin-left:0;
+    padding-left:0;
+}
+
+footer h3
+{
+    padding-left:0;
 }
 
 
@@ -449,6 +461,18 @@ footer ul
 /* Sur tous types d'écran, quand la largeur de la fenêtre est comprise entre 375px et 768px */
 @media screen and (min-width: 375px) and (max-width: 1300px)
 {
+    /*gestion des marges en dessous de 1300px*/
+    .max_width_container
+    {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    #div_footer
+    {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
     /*filtres*/
     #filtres ul
     {
@@ -467,9 +491,9 @@ footer ul
         height : auto;
         width:auto;
         flex-direction: column;
-        margin:10px;
         padding:10px;
         padding-right: 40px;
+        margin-right: 0;
         gap:8%;
     }
 
@@ -498,8 +522,7 @@ footer ul
         width:auto;
         flex-direction: row;
         flex-wrap: wrap;
-        margin:10px;
-        padding:10px;
+        margin-top: 40px;
         padding-right: 40px;
         gap:7%;
     }
@@ -520,14 +543,27 @@ footer ul
     #section_activite
     {
         display: flex;
+        width: auto;
         flex-direction: column;
+        margin-left: 20px;
+        flex-wrap: wrap;
+        height: auto;
     }
 
     #Grand_div
     {
         display: flex;
+        width: 100%;
         flex-direction: column;
+        flex-wrap: wrap;
     }
+
+    #Vieux_port, #Parc_national_des_calanques, #Miniature_colle_vieux_port, #Miniature_colle_parc_calanques
+    {
+        flex-wrap: wrap;
+        width: 280px;
+    }
+    
     #Miniature_colle_vieux_port
     {
         margin-right: 0;
@@ -546,8 +582,6 @@ footer ul
 
 Revue de code :
 
-Max width / margin auto : corriger sur chaque élément ou tu mets une max width (centrer ton bloc)
-regler les paddings et margin enlever ceux qui sont internes et essayer de les mettre au plus haut niveau
 colorPicker eyedropper : extension chrome qui te permet d'avoir la couleur précise d'un élément
 
 charte couleur
@@ -560,6 +594,8 @@ Small : 410px
 Mini : 375px
 
 done
+Max width / margin auto : corriger sur chaque élément ou tu mets une max width (centrer ton bloc)
+regler les paddings et margin enlever ceux qui sont internes et essayer de les mettre au plus haut niveau
 controller la font weight
 info sous filtre : font weight a regler
 regler la font family sur footer
