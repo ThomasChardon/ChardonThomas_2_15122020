@@ -7,6 +7,12 @@
     font-style:normal;
 }
 
+@font-face
+{
+    font-family: 'RalewayBold';
+    src: url("fonts/Raleway-ExtraBold.ttf") format("truetype");
+    font-weight: bolder;
+}
 
 .max_width_container
 {
@@ -75,7 +81,10 @@
 
 
 
-
+#sous_titre h2
+{
+    font-family: 'RalewayBold';
+}
 
 
 /*Champs recherche et filtres*/
@@ -96,7 +105,12 @@
 #filtres
 {
     display:flex;
-    font-weight:bolder;
+    font-family: 'RalewayBold';
+}
+
+#nom_filtre
+{
+    padding-top:10px;
 }
 
 .icones_filtres
@@ -284,6 +298,7 @@ article h2
 {
     padding-left: 40px;
     padding-top: 20px;
+    font-family: 'RalewayBold';
 }
 
 #Afficher_plus
@@ -302,7 +317,7 @@ article h2
 
 .etoile_vide
 {
-    color:grey;
+    color: #F2F2F2;
 }
 
 /*Aside*/
@@ -310,6 +325,8 @@ aside h2
 {
     display: flex;
     justify-content: space-between;
+    font-family: 'RalewayBold';
+    font-size: 22px;
 }
 
 section aside
@@ -319,7 +336,7 @@ section aside
     padding-left: 50px;
     padding-right: 50px;
     padding-bottom: 20px;
-    padding-top: 20px;
+    padding-top: 10px;
     font-size: 0.8em;
     flex-direction: column;
     justify-content: space-around;
@@ -329,7 +346,7 @@ section aside
 aside div
 {
     border:5px white solid;
-    height: 130px;
+    height: 160px;
     background-color: white;
     min-width: 300px;
     border-radius: 8%/20%;
@@ -345,7 +362,7 @@ aside div h3, aside div p
 #Hotel_le_soleil_du_matin img, #Au_coeur_de_leau_chambre_dhotes img, #Hotel_tout_bleu_et_blanc img
 {
     width: 150px;
-    height: 130px;
+    height: 160px;
     border-top-left-radius: 23px;
     border-bottom-left-radius: 23px;
     object-fit: cover;
@@ -369,6 +386,11 @@ aside div h3, aside div p
 {
     display:flex;
     width: 100%;
+}
+
+#section_activite h4
+{
+    padding-left:20px;
 }
 
 .Grand_div
@@ -666,6 +688,32 @@ footer h3
 
 /* 
 
+
+
+Quelques retours :
+- Titre et élément en gras sur toute la page : font weight a revoir (un peu plus gras sur la maquette)
+- Titre H1 et paragraphe : espace à revoir
+- Filtre : le label "Filtre" n'est pas aligné
+- Champs info (sous les filtres) : font size a revoir ainsi qu'espacement avec la section suivante
+- Hebergement et les plus populaires :
+    - Espace titre vignette a revoir
+    - Afficher a plus : font size + font weight a revoir
+
+- Activité à Marseille :
+    - Trop d'espace entre les grandes vignettes et le groupe de deux plus petites : ce qui fait que les petites vignettes ne sont pas assez large
+    - En mobile : revoir la width des vignettes
+- Footer :
+    - Revoir espacement entre les listes mais aussi entre chaque ligne
+    - Revoir font size et font weight
+    - W3C html et css : corriger les warnings
+    
+    
+    done
+- Hebergement et les plus populaires :
+- Etoile vide : pas la bonne couleur
+    
+- Activité à Marseille :
+- Titre des vignettes : padding a revoir (trop collé au bord)
 
 
 lien de menu : utilisation hover (changement couleur lien) et pseudo element : before et after pour la barre au dessus des éléments. 
