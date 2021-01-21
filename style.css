@@ -19,14 +19,26 @@
 #Titre
 {
     display: flex;
-    justify-content: space-between;
+    width: 100%;
     padding-top: 40px;
 }
 
-#nav_et_inscription
+#nav, #s_inscrire
 {
     display: flex;
     align-items: center;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+#s_inscrire
+{
+    width:100px;
+}
+
+#logo
+{
+    float:left;
 }
 
 #nav ul
@@ -37,7 +49,7 @@
 
 #nav li
 {
-    margin-right: 15px;
+    margin-right: 50px;
 }
 
 #nav a
@@ -596,13 +608,57 @@ footer h3
     }
 
 
-    #nav_et_inscription
+    /* #nav_et_inscription
     {
         flex-wrap: wrap-reverse;
-    }
+    } */
+
+    /* #Titre
+    {
+        flex-wrap: wrap;
+    } */
 
 }
 
+@media screen and (min-width: 374px) and (max-width: 540px)
+{
+    #Titre
+    {
+        /* padding-top: 80px; */
+        flex-wrap: wrap;
+    } 
+
+     #logo
+    {
+        height: 100%;
+    }
+
+    #nav
+    {
+        order:3;
+        width: 100%;
+        padding-top: 40px;
+        justify-content: center;
+    }
+
+    #nav nav
+    {
+        width: 100%;
+    }
+
+    #nav nav ul
+    {
+        justify-content: space-evenly ;
+    }
+
+    #s_inscrire
+    {
+        order:2;
+        width: 70%;
+    } 
+
+
+}
 
 /* 
 
