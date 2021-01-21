@@ -622,6 +622,7 @@ footer h3
 
 @media screen and (min-width: 374px) and (max-width: 540px)
 {
+    /*header*/
     #Titre
     {
         /* padding-top: 80px; */
@@ -657,33 +658,15 @@ footer h3
         width: 70%;
     } 
 
+    /*section*/
+    #Article_hebergements h2
+    {
+        width: 90%;
+    }
 
 }
 
 /* 
-
-
-Revue de code :
-
-colorPicker eyedropper : extension chrome qui te permet d'avoir la couleur précise d'un élément
-
-
-done
-Max width / margin auto : corriger sur chaque élément ou tu mets une max width (centrer ton bloc)
-regler les paddings et margin enlever ceux qui sont internes et essayer de les mettre au plus haut niveau
-controller la font weight
-info sous filtre : font weight a regler
-regler la font family sur footer
-Filtres : animaux autorisé sur une ligne
-regler la position de l'icone avec le h2
-footer : placement en flex start + regler avec un gap
-border radius pas en pourcentage mais en px
-
-
-
-
-
-
 
 
 
@@ -691,33 +674,4 @@ lien de menu : utilisation hover (changement couleur lien) et pseudo element : b
 N'oublie pas que ces liens de menu sont des ancres qui ammènent vers les différentes section de ta page
 
 
-
-changer flex space between en center (a toi de voir ici : normalement tu peux laisser space between si tu défini une max-width a ton contenu)
-revoir justify content et align items : deux propriétés très importantes sur flex
-corriger les erreurs de placements relatives à ces deux propriétés
-
-
-chrome devtools : chercher des tutoriels
-
-*/
-
-
-
-/* done
-font awesome pour les différents icones de la maquette : https://fontawesome.com/icons?d=gallery / 
-tu peux importer font awesome en téléchargeant le fichier css associé ou en passant par un cdn (https://cdnjs.com/)
-
-
-utiliser object fit : https://developer.mozilla.org/fr/docs/Web/CSS/object-fit sur les images pour qu'elle ne s'étire pas
-plus d'espace activité a marseille
-mettre margin left sur derniere div (id)
-reorganisation header premiere section
-modifier le style du lien afficher plus
-corriger le bug d'import de la police Raleway 
-etoile a changer : remplacer par font awesome
-
-essayé mais ça casse tout :
-définir une class "max-width-container" avec les propriétés suivantes :
-max-width: 1300px;
-margin: auto; → sert à centrer les éléments
 */
