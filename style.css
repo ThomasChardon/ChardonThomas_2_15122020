@@ -21,6 +21,11 @@
     font-family: 'Raleway';
     max-width: 1300px;
 }
+
+strong
+{
+    font-family: 'RalewayBold';
+}
 /*Header*/
 #Titre
 {
@@ -78,14 +83,16 @@
 }
 
 
-
-
-
 #sous_titre h2
 {
     font-family: 'RalewayBold';
+    margin-bottom: 10px;
 }
 
+#sous_titre
+{
+font-weight: bold;
+}
 
 /*Champs recherche et filtres*/
 #Filtres_sous_header
@@ -155,9 +162,9 @@
 
 #info
 {
-    padding-bottom: 20px;
+    padding-bottom: 40px;
     margin-top: 20px;
-    font-weight: normal;/*Ne fonctionne pas ?*/
+    font-weight: bold;
 }
 
 #id_i_info
@@ -263,6 +270,7 @@ section article
     width: 100%;
     height: 550px;
     align-content: space-around;
+    padding-bottom: 0;
 }
 
 article div
@@ -291,7 +299,12 @@ article div
 }
 div h3, div p
 {
-    padding-left: 20px;
+    padding-left: 15px;
+}
+
+#Article_photos_hebergements div h3
+{
+    font-family: 'RalewayBold';
 }
 
 article h2
@@ -299,14 +312,16 @@ article h2
     padding-left: 40px;
     padding-top: 20px;
     font-family: 'RalewayBold';
+    margin-bottom: 0;
 }
 
 #Afficher_plus
 {
     padding-left: 40px;
-    padding-bottom: 20px;
+    font-family: 'RalewayBold';
     text-decoration: none;
     color: black;
+    font-size: large;
 }
 
 
@@ -327,13 +342,14 @@ aside h2
     justify-content: space-between;
     font-family: 'RalewayBold';
     font-size: 22px;
+    margin-bottom: 0;
 }
 
 section aside
 {
     display: flex;
     height: 700px;
-    padding-left: 50px;
+    padding-left: 40px;
     padding-right: 50px;
     padding-bottom: 20px;
     padding-top: 10px;
@@ -359,6 +375,11 @@ aside div h3, aside div p
     padding-left: 160px;
 }
 
+aside div h3
+{
+    font-family: 'RalewayBold';
+}
+
 #Hotel_le_soleil_du_matin img, #Au_coeur_de_leau_chambre_dhotes img, #Hotel_tout_bleu_et_blanc img
 {
     width: 150px;
@@ -380,6 +401,7 @@ aside div h3, aside div p
 #Div_titre_activite
 {
     padding-top: 10px;
+    font-family: 'RalewayBold';
 }
 
 #section_activite
@@ -391,6 +413,7 @@ aside div h3, aside div p
 #section_activite h4
 {
     padding-left:20px;
+    font-family: 'RalewayBold';
 }
 
 .Grand_div
@@ -476,8 +499,18 @@ footer ul
 footer h3
 {
     padding-left:0;
+    font-family: 'RalewayBold';
 }
 
+footer li
+{
+    margin-top:10px;
+}
+
+footer li:first-child
+{
+    margin-top:0px;
+}
 
 
 
@@ -691,24 +724,25 @@ footer h3
 
 
 Quelques retours :
+
+- Activité à Marseille :
+- Trop d'espace entre les grandes vignettes et le groupe de deux plus petites : ce qui fait que les petites vignettes ne sont pas assez large
+- En mobile : revoir la width des vignettes
+- Footer :
+- Revoir espacement entre les listes mais aussi entre chaque ligne
+- Revoir font size et font weight
+- W3C html et css : corriger les warnings
+
+
+done
 - Titre et élément en gras sur toute la page : font weight a revoir (un peu plus gras sur la maquette)
 - Titre H1 et paragraphe : espace à revoir
 - Filtre : le label "Filtre" n'est pas aligné
 - Champs info (sous les filtres) : font size a revoir ainsi qu'espacement avec la section suivante
 - Hebergement et les plus populaires :
-    - Espace titre vignette a revoir
-    - Afficher a plus : font size + font weight a revoir
+- Espace titre vignette a revoir
+- Afficher a plus : font size + font weight a revoir
 
-- Activité à Marseille :
-    - Trop d'espace entre les grandes vignettes et le groupe de deux plus petites : ce qui fait que les petites vignettes ne sont pas assez large
-    - En mobile : revoir la width des vignettes
-- Footer :
-    - Revoir espacement entre les listes mais aussi entre chaque ligne
-    - Revoir font size et font weight
-    - W3C html et css : corriger les warnings
-    
-    
-    done
 - Hebergement et les plus populaires :
 - Etoile vide : pas la bonne couleur
     
