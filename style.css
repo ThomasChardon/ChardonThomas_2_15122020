@@ -428,17 +428,17 @@ aside div h3
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 280px;
+    width: 295px;
 }
 
 #Miniature_colle_vieux_port
 {
-    margin-right: 30px;
+    margin-right: 20px;
 }
 
 #Parc_national_des_calanques
 {
-    margin-left: 30px;
+    margin-left: 20px;
 }
 
 /*Taille photos*/
@@ -726,32 +726,8 @@ footer li:first-child
 Quelques retours :
 
 - Activité à Marseille :
-- Trop d'espace entre les grandes vignettes et le groupe de deux plus petites : ce qui fait que les petites vignettes ne sont pas assez large
+
 - En mobile : revoir la width des vignettes
-- Footer :
-- Revoir espacement entre les listes mais aussi entre chaque ligne
-- Revoir font size et font weight
+
 - W3C html et css : corriger les warnings
-
-
-done
-- Titre et élément en gras sur toute la page : font weight a revoir (un peu plus gras sur la maquette)
-- Titre H1 et paragraphe : espace à revoir
-- Filtre : le label "Filtre" n'est pas aligné
-- Champs info (sous les filtres) : font size a revoir ainsi qu'espacement avec la section suivante
-- Hebergement et les plus populaires :
-- Espace titre vignette a revoir
-- Afficher a plus : font size + font weight a revoir
-
-- Hebergement et les plus populaires :
-- Etoile vide : pas la bonne couleur
-    
-- Activité à Marseille :
-- Titre des vignettes : padding a revoir (trop collé au bord)
-
-
-lien de menu : utilisation hover (changement couleur lien) et pseudo element : before et after pour la barre au dessus des éléments. 
-N'oublie pas que ces liens de menu sont des ancres qui ammènent vers les différentes section de ta page
-
-
 */
