@@ -11,7 +11,7 @@
 {
     font-family: 'RalewayBold';
     src: url("fonts/Raleway-ExtraBold.ttf") format("truetype");
-    font-weight: bolder;
+    font-weight: bold;
 }
 
 .max_width_container
@@ -170,7 +170,6 @@ font-weight: bold;
 #id_i_info
 {
     color:#0065FC;
-    size: 1px;
     border: 1px solid lightgray;
     height: 20px;
     width: 15px;
@@ -718,16 +717,3 @@ footer li:first-child
     }
 
 }
-
-/* 
-
-
-
-Quelques retours :
-
-- Activité à Marseille :
-
-- En mobile : revoir la width des vignettes
-
-- W3C html et css : corriger les warnings
-*/
