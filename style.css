@@ -645,10 +645,6 @@ footer li:first-child
 
 @media screen and (min-width: 374px) and (max-width: 610px)
 {
-    #Vieux_port, #Fort_de_pomegues, #Parc_national_des_calanques, #Notre_dame_de_la_garde
-    {
-        margin-bottom: 20px;
-    }
 
     #recherche_bleue
     {
@@ -670,6 +666,15 @@ footer li:first-child
     {
         padding-left: 35px;
     }
+}
+
+@media screen and (min-width: 374px) and (max-width: 635px)
+{
+    #Vieux_port, #Parc_national_des_calanques, #Miniature_colle_vieux_port, #Miniature_colle_parc_calanques
+        {
+            width:100%;
+            margin-bottom: 20px;
+        }
 }
 
 @media screen and (min-width: 374px) and (max-width: 540px)
