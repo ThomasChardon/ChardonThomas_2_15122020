@@ -26,6 +26,12 @@ strong
 {
     font-family: 'RalewayBold';
 }
+
+::placeholder
+{
+    font-family: 'RalewayBold';
+    color:black;
+}
 /*Header*/
 #Titre
 {
@@ -245,7 +251,7 @@ section
     margin-bottom: 50px;
 }
 
-section article
+section article,#Article_hebergements
 {
    display: flex;
    flex-wrap: wrap;
@@ -306,7 +312,7 @@ div h3, div p
     font-family: 'RalewayBold';
 }
 
-article h2
+#Article_hebergements h2
 {
     padding-left: 40px;
     padding-top: 20px;
@@ -323,6 +329,10 @@ article h2
     font-size: large;
 }
 
+aside .Note_en_etoiles
+{
+    margin-top: 50px;
+}
 
 .etoile_pleine
 {
@@ -364,6 +374,7 @@ aside div
     height: 160px;
     background-color: white;
     min-width: 300px;
+    max-width:320px;
     border-radius: 8%/20%;
     line-height: 17px;
     box-shadow: 2px 2px 4px lightgray,-2px -2px 4px lightgray;
@@ -484,7 +495,7 @@ footer
     max-width: 1300px;
     margin-left: auto;
     margin-right: auto;
-    gap:0 160px;
+    gap:0 250px;
     flex-wrap: wrap;
 }
 
@@ -722,3 +733,22 @@ footer li:first-child
     }
 
 }
+
+
+
+/*
+
+vm header : lien au hover → barre en bas et en pleine largeur
+vm filtre : espace entre les filtres : gap
+vm activité a marseille : corriger les espaces
+
+
+ok
+Font raleway pas correctement importé : https://fonts.google.com/specimen/Raleway
+input recherche : placeholder a utiliser a la place de value (+ design placeholder) : https://developer.mozilla.org/fr/docs/Web/CSS/::placeholder
+les plus populaires : grand espace
+footer : plus d'espace entre les listes
+w3c html : corriger le warning : enlever le tag article et remplacé par div
+
+
+*/
