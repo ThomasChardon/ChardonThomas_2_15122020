@@ -796,6 +796,8 @@ footer li:first-child
     {
         width: 90%;
     }
+
+    /*mise a jour du champs de recherche au milieu*/
     #div_recherche
     {
         display: flex;
