@@ -540,7 +540,7 @@ footer li:first-child
 
 
 /* Sur tous types d'écran, quand la largeur de la fenêtre est comprise entre 375px et 768px */
-@media screen and (min-width: 374px) and (max-width: 1300px)
+@media screen and (min-width: 345px) and (max-width: 1300px)
 {
     body
     {
@@ -662,7 +662,7 @@ footer li:first-child
 }
 
 /*petite query pour étirer les photo lorsque la largeur ne permet qu'une photo a la fois*/
-@media screen and (min-width: 374px) and (max-width: 760px)
+@media screen and (min-width: 345px) and (max-width: 760px)
 {
     #Article_photos_hebergements div
         {
@@ -670,7 +670,7 @@ footer li:first-child
         }
 }
 
-@media screen and (min-width: 374px) and (max-width: 610px)
+@media screen and (min-width: 345px) and (max-width: 610px)
 {
 
     #recherche_bleue
@@ -695,7 +695,7 @@ footer li:first-child
     }
 }
 
-@media screen and (min-width: 374px) and (max-width: 635px)
+@media screen and (min-width: 345px) and (max-width: 635px)
 {
     /*activités*/
     #Vieux_port, #Parc_national_des_calanques, #Miniature_colle_vieux_port, #Miniature_colle_parc_calanques
@@ -714,7 +714,7 @@ footer li:first-child
     }
 }
 
-@media screen and (min-width: 374px) and (max-width: 540px)
+@media screen and (min-width: 345px) and (max-width: 540px)
 {
     /*sert a redéfinir les marges pour que la ligne grise fasse toute la width*/
     /*les marges sont ensuite redéclarées aux enfants*/
@@ -787,7 +787,7 @@ footer li:first-child
     #s_inscrire
     {
         order:2;
-        width: 70%;
+        width:70%;
         margin-right:15px;
     } 
 
@@ -796,4 +796,17 @@ footer li:first-child
     {
         width: 90%;
     }
+    #div_recherche
+    {
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+@media screen and (min-width: 345px) and (max-width: 430px)
+{
+    #s_inscrire
+    {
+        width:60%;
+    } 
 }
